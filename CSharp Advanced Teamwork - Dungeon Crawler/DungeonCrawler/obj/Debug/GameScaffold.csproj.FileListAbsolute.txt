@@ -1,0 +1,6 @@
+E:\Soft Uni\Teamwork and Personal Skills\CSharp Advanced Teamwork Project\DungeonCrawler\bin\Debug\GameScaffold.exe.config
+E:\Soft Uni\Teamwork and Personal Skills\CSharp Advanced Teamwork Project\DungeonCrawler\bin\Debug\GameScaffold.exe
+E:\Soft Uni\Teamwork and Personal Skills\CSharp Advanced Teamwork Project\DungeonCrawler\bin\Debug\GameScaffold.pdb
+E:\Soft Uni\Teamwork and Personal Skills\CSharp Advanced Teamwork Project\DungeonCrawler\obj\Debug\GameScaffold.csprojResolveAssemblyReference.cache
+E:\Soft Uni\Teamwork and Personal Skills\CSharp Advanced Teamwork Project\DungeonCrawler\obj\Debug\GameScaffold.exe
+E:\Soft Uni\Teamwork and Personal Skills\CSharp Advanced Teamwork Project\DungeonCrawler\obj\Debug\GameScaffold.pdb
