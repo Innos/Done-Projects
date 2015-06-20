@@ -11,3 +11,5 @@ E:\Soft Uni\Exams and Labs\OOP\Logger\Logger\01Logger\bin\Debug\01Logger.dll.con
 E:\Soft Uni\Exams and Labs\OOP\Logger\Logger\01Logger\bin\Debug\01Logger.dll
 E:\Soft Uni\Exams and Labs\OOP\Logger\Logger\01Logger\obj\Debug\01Logger.dll
 E:\Soft Uni\Exams and Labs\OOP\Logger\Logger\01Logger\bin\Debug\01Logger.exe.config
+E:\Soft Uni\Done Projects\Logger\Logger\01Logger\bin\Debug\01Logger.exe.config
+E:\Soft Uni\Done Projects\Logger\Logger\01Logger\obj\Debug\01Logger.pdb
