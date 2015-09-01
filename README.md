@@ -1,2 +1,2 @@
 # Done-Projects
-Portfolio of fully done projects
+Portfolio of done projects
