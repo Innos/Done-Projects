@@ -1,0 +1,581 @@
+﻿/**********************************************************************
+RESET
+**********************************************************************/
+html, body {
+    border: 0;
+    font-family: "Helvetica-Neue", "Helvetica", Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+div, span, object, iframe, img, table, caption, thead, tbody,
+tfoot, tr, tr, td, article, aside, canvas, details, figure, hgroup, menu,
+nav, footer, header, section, summary, mark, audio, video {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cit, code,
+del, dfn, em, ins, q, samp, small, strong, sub, sup, b, i, hr, dl, dt, dd,
+ol, ul, li, fieldset, legend, label {
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+    display: block;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+
+    caption, th, td {
+        text-align: left;
+        vertical-align: middle;
+    }
+}
+
+a img {
+    border: 0;
+}
+
+:focus {
+    outline: 0;
+}
+
+/**********************************************************************
+MAIN STYLING
+**********************************************************************/
+html {
+    height: 100%;
+    -webkit-text-size-adjust: none;
+
+    body {
+        height: 100%;
+        min-height: 100%;
+        font: 10pt/1.4 Helvetica, sans-serif;
+        color: #565656;
+        background: #efedea url(../resources/img/main_bg.png);
+
+        #wrapper {
+            max-width: 1160px;
+            position: relative;
+            margin: 0 auto;
+            min-height: 100%;
+            overflow: hidden;
+
+            header {
+                position: relative;
+                width: 100%;
+                height: 68px;
+                background-color: black;
+                box-shadow: 0 0px 0px rgba(0, 0, 0, .2);
+
+                #logo {
+                    float: left;
+                    padding: 5px;
+                    max-width: 100%;
+                    max-height: 100%;
+                    width: 60px;
+                    height: 58px;
+                    display: flex;
+                    justify-content: middle;
+
+                    img {
+                        padding-left: 10px;
+                        max-width: 100%;
+                        max-height: 100%;
+                        width: 40px;
+                        height: 58px;
+                    }
+                }
+
+
+                #logo:hover {
+                    -webkit-animation-name: spin;
+                    -webkit-animation-duration: 0.6s;
+                    -webkit-animation-iteration-count: infinite;
+                    -webkit-animation-timing-function: linear;
+                }
+
+                @-webkit-keyframes spin {
+                    0% {
+                        transform: rotate(0deg);
+                    }
+
+                    100% {
+                        transform: rotate(180deg);
+                    }
+                }
+
+                nav {
+                    float: right;
+                    height: 68px;
+
+                    ul {
+                        list-style: none;
+                        padding-top: 22px;
+                        height: 100%;
+
+                        li {
+                            float: left;
+
+                            a {
+                                font-size: 1.25em;
+                                color: #FFF;
+                                padding: 15px 20px;
+                                text-decoration: none;
+                            }
+
+                            a:hover {
+                                color: #000;
+                                text-shadow: 0px 0px 2px #393939;
+                                background-color: #FFF;
+                                border: 0px 2px 2px #FFF;
+                                border-radius: 5px;
+                                transition: all .3s ease .0s;
+                                box-shadow: 0px 0px 50px 5px #FFF;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .content {
+                position: absolute;
+                width: 100%;
+                transition: ease-in-out 0.3s;
+            }
+
+            .hidden {
+                left: 200%;
+                display: none;
+            }
+
+            .visible {
+                display: block
+            }
+
+            #home-page{
+                background-color: #000;
+                width: 100%;
+
+                main{
+                    width: 80%;
+                    display: flex;
+                    justify-content: center;
+
+                    #the-big-s{
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 20%;
+                        height: 20%;
+                    }
+
+                    p{
+                        display: inline-block;
+                        font-size: 100px;
+                        font-weight: bold;
+                        color: #FFF;
+                    }
+                }
+                
+                footer {
+                    display: flex;
+                    justify-content: center;
+                    position: fixed;
+                    bottom: 10%;
+                    width: 84.95%;
+                    height: 32.5%;
+                    #fun-things{
+                        display: block;
+                        border-radius: 20%;
+                    }
+                }
+            }
+
+            #news-page{
+                article.latest-news{
+                    padding-bottom: 5%;
+                    margin-top: 5%;
+                    div.news-caption{
+                        font-size: 2.25em;
+
+                    }
+
+                    main{
+                        p{
+                            font-size: 1.25em;
+                        }
+                    }
+                }
+
+                article.not-so-latest-news{
+                    div.news-caption{
+                        font-size: 2.25em;
+
+                    }
+
+                    main{
+                        p{
+                            font-size: 1.25em;
+                        }
+                    }   
+                }
+            }
+
+            #pictures-page{
+
+                section#pictures-main-content{
+                    margin-right: 3%;
+                    width: 55%;
+                    padding: 1% 2%;
+
+                    article{
+                        position: absolute;
+                    }
+
+                    .shown-picture {
+                        position: absolute;
+                        transition: ease-in-out 0.3s;
+                        background-color: azure;round: linear-gradient(lightgray 0%,white 55%, lightgray 65%, white 100%);
+                        margin-top: 1%;
+                        margin-bottom: 1%;
+                        max-width: 450px;
+                        padding: 1% 2%;
+                        border-bottom: 2px solid lightgray;
+
+                        .next-image{
+                            display: flex;
+                            justify-content: center;
+                            float: right;
+                            text-decoration: none;
+                            color: #000;
+                            background-color: lightgray;
+                            border-radius: 20%;
+                            opacity: 0.5;
+                            width: 130px;
+                            height: 40px;
+                            margin-bottom: 3%;
+
+                            p{
+                                font-size: 1.15em;
+                                text-align: center;
+                            }
+                            
+                            img{
+                                display: inline-block;
+                                float: right;
+                                vertical-align: middle;
+                                width: 25%;
+                            }
+                        }
+
+                        .image-caption{
+                            display: inline-block;
+                            margin-top: 2%;
+                            padding-bottom: 3%;
+                            font-size: 1.5em;
+                            font-weight: bold;
+                        }
+
+                        img{
+                            vertical-align: middle;
+                            width: 70%;
+                        }
+
+                        .votes{
+                            
+                            div {
+                                cursor: hand;
+                                cursor: pointer;
+                                display: inline-block;
+                                padding: 5px 10px;
+                                margin-top:1em;
+                                border-radius: 20%;
+                                max-width: 100%;
+                                width: 40px;
+                                height: 40px;
+                                background-size: 50%;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                            }
+                    
+                            .upvote{
+                                background-image: url(../resources/img/like.png);
+                            }
+
+                            .downvote{
+                                background-image: url(../resources/img/dislike.png);
+                            }
+
+                            .upvote:hover{
+                                background-color: lightgreen;
+                            }
+
+                            .downvote:hover{
+                                background-color: red;
+                            }
+                        }
+                    }
+
+                    .hidden-picture {
+                        left: 200%;
+                        display: none;
+                    }
+
+                    aside#pictures-recommendations{
+                        position: absolute;
+                        width: 20%;
+                        left: 70%;
+                        padding: 1%;
+
+                        figure{
+                            margin: auto;
+                            width: 60%;
+                        
+                            img{
+                                display: block;
+                                height: 90px;
+                                margin: auto;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            #gifs-page{
+                padding-bottom: 110px;
+
+                section#gifs-main-content{
+                    margin-right: 3%;
+                    width: 55%;
+
+                    article{
+                    }
+
+                    .shown-gif {
+                        position: absolute;
+                        transition: ease-in-out 0.3s;
+                        background-color: azure;round: linear-gradient(lightgray 0%,white 55%, lightgray 65%, white 100%);
+                        margin-top: 1%;
+                        margin-bottom: 1%;
+                        max-width: 450px;
+                        border-bottom: 2px solid lightgray;
+
+                        .next-gif{
+                            display: flex;
+                            justify-content: center;
+                            float: right;
+                            text-decoration: none;
+                            color: #000;
+                            background-color: lightgray;
+                            border-radius: 20%;
+                            opacity: 0.5;
+                            width: 130px;
+                            height: 40px;
+                            margin-bottom: 3%;
+
+                            p{
+                                font-size: 1.15em;
+                                text-align: center;
+                            }
+                            
+                            img{
+                                display: inline-block;
+                                float: right;
+                                vertical-align: middle;
+                                width: 25%;
+                            }
+                        }
+
+                        .gif-caption{
+                            display: block;
+                            margin-top: 2%;
+                            padding-bottom: 3%;
+                            font-size: 1.5em;
+                            font-weight: bold;
+                        }
+
+                        img{
+                            vertical-align: middle;
+                            max-width: 450px;
+                            max-height: 350px;
+                        }
+
+                        .votes{
+                            
+                            div {
+                                cursor: hand;
+                                cursor: pointer;
+                                display: inline-block;
+                                padding: 5px 10px;
+                                margin-top:1em;
+                                border-radius: 20%;
+                                max-width: 100%;
+                                width: 40px;
+                                height: 40px;
+                                background-size: 50%;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                            }
+                    
+                            .upvote{
+                                background-image: url(../resources/img/like.png);
+                            }
+
+                            .downvote{
+                                background-image: url(../resources/img/dislike.png);
+                            }
+
+                            .upvote:hover{
+                                background-color: lightgreen;
+                            }
+
+                            .downvote:hover{
+                                background-color: red;
+                            }
+                        }
+                    }
+
+                    .hidden-gif {
+                        left: 200%;
+                        display: none;
+                    }
+
+                    aside#gifs-recommendations{
+                        position: absolute;
+                        width: 20%;
+                        left: 70%;
+                        padding: 1%;
+
+                        figure{
+                            margin: auto;
+                            width: 60%;
+                        
+                            img{
+                                display: block;
+                                height: 90px;
+                                margin: auto;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #game-page {
+                width: 100%;
+                height: 100%;
+
+                #board{
+                    position: absolute;
+                    bottom: 15%;
+                    left: 31.5%;
+                    max-width: 100%;
+                    width: 424px;
+                    margin: 5% auto;
+                    .row {
+                        margin: 0 auto;
+                    }
+
+                    .cell { 
+                        max-width: 100%;
+                        width: 100px;
+                        height: 100px;
+                        border: 3px solid black;
+                        border-collapse: collapse;
+                        float: left;
+                        font-size: 20px;
+                        text-align: center;
+
+                    }
+
+                    #winner{
+                        position: relative;
+                        text-align: center;
+                        height: 40px;
+                        font-size: 20px;
+                        color: green;
+                    }
+
+                    .button {
+                        width: 100px;
+                        margin: 25px auto 0 auto;
+
+                        a {
+                            width: 100px;
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+
+            footer {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                /*max-width: 1160px;*/
+                margin: 0 auto;
+                height: 68px;
+                background-color: #000;
+                box-shadow: 0 0px 0px rgba(0, 0, 0, .2);
+
+                main {
+                    display: flex;
+                    justify-content: flex-end;
+
+                    nav {
+                        height: 68px;
+                        padding-right: 5px;
+
+                        ul {
+                            list-style: none;
+                            padding-top: 20px;
+                            height: 100%;
+
+                            li {
+                                float: left;
+
+                                a {
+                                    font-size: 1.25em;
+                                    color: #FFF;
+                                    padding: 15px 20px;
+                                    text-decoration: none;
+                                }
+
+                                a:hover {
+                                    color: #FFD700;
+                                    transition: all .3s ease .0s;
+                                }
+                                //END a
+                            }
+                            //END li
+                        }
+                        //END ul
+                    }
+                    //END nav
+                }
+                //END main
+                aside {
+                    position: absolute;
+                    top: 45px;
+                    left: 20px;
+                    max-width: 100%;
+                    max-height: 100%;
+                    width: 300px;
+                    height: 20px;
+                    display: block;
+                    font-size: 1.05em;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>SoftGAG</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <link href="styles/style.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <a href="index.html" id="logo">
+                <img src="resources/img/logo.jpg" alt="Well, this is awkward..." title="Soft Gag Logo">
+            </a>
+            <nav>
+                <ul type="none">
+                    <li><a class="navigation-button" href="#" id="news">News</a></li>
+                    <li><a class="navigation-button" href="#" id="pictures">Pictures</a></li>
+                    <li><a class="navigation-button" href="#" id="videos">Videos</a></li>
+                    <li><a class="navigation-button" href="#" id="gifs">Animated gifs</a></li>
+                    <li><a class="navigation-button" href="#" id="game">Game</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="home-page" class="content">
+        </main>
+
+        <main id="pictures-page" class="hidden">
+            <section id="pictures-main-content">
+                <article id="article1" class="shown-picture">
+                    <div class="image-caption">Piracy Victim</div>
+                    <a class="next-image" href="#" id="image2">
+                        <p>Next Image</p>
+                        <img src="resources/img/next-button.png">
+                        <img src="resources/img/next-button.png">
+                    </a>
+                    <img src="resources/pics/image1.jpeg" alt="Article Image">
+                    <div class="votes">
+                        <div class="upvote"></div>
+                        <div class="downvote"></div>
+                    </div>
+                </article>
+                <article id="article2" class="hidden-picture">
+                    <div class="image-caption">Software Developer</div>
+                    <a class="next-image" href="#" id="image3">
+                        <p>Next Image</p>
+                        <img src="resources/img/next-button.png">
+                        <img src="resources/img/next-button.png">
+                    </a>
+                    <img src="resources/pics/image2.jpg" alt="Article Image">
+                    <div class="votes">
+                        <div class="upvote"></div>
+                        <div class="downvote"></div>
+                    </div>
+                </article>
+                <article id="article3" class="hidden-picture">
+                    <div class="image-caption">Pecking Order</div>
+                    <a class="next-image" href="#" id="image4">
+                        <p>Next Image</p>
+                        <img src="resources/img/next-button.png">
+                        <img src="resources/img/next-button.png">
+                    </a>
+                    <img src="resources/pics/image3.png" alt="Article Image">
+                    <div class="votes">
+                        <div class="upvote"></div>
+                        <div class="downvote"></div>
+                    </div>
+                </article>
+                <article id="article4" class="hidden-picture">\
+                    <div class="image-caption">Software Terminology</div>
+                    <a class="next-image" href="#" id="image5">
+                        <p>Next Image</p>
+                        <img src="resources/img/next-button.png">
+                        <img src="resources/img/next-button.png">
+                    </a>
+                    <img src="resources/pics/image4.jpg" alt="Article Image">
+                    <div class="votes">
+                        <div class="upvote"></div>
+                        <div class="downvote"></div>
+                    </div>
+                </article>
+                <article id="article5" class="hidden-picture">
+                    <div class="image-caption"  id="image1">Software Update</div>
+                    <a class="next-image" href="#" id="image1">
+                        <p>Next Image</p>
+                        <img src="resources/img/next-button.png">
+                        <img src="resources/img/next-button.png">
+                    </a>
+                    <img src="resources/pics/image5.png" alt="Article Image">
+                    <div class="votes">
+                        <div class="upvote"></div>
+                        <div class="downvote"></div>
+                    </div>
+                </article>
+                <aside id="pictures-recommendations">
+                    <a href="#" class="next-image" id="recommend1">
+                        <figure class="recomended" id="top1">
+                            <img src="resources/pics/image1.jpeg" alt="Most popular article 1">
+                        </figure>
+                    </a>
+                    <a href="#" class="next-image" id="recommend2">
+                        <figure class="recomended" id="top2">
+                            <img src="resources/pics/image2.jpg" alt="Most popular article 2">
+                        </figure>
+                    </a>
+                    <a href="#" class="next-image" id="recommend3">
+                        <figure class="recomended" id="top3">
+                            <img src="resources/pics/image3.png" alt="Most popular article 3">
+                        </figure>
+                    </a>
+                    <a href="#" class="next-image" id="recommend4">
+                        <figure class="recomended" id="top4">
+                            <img src="resources/pics/image4.jpg" alt="Most popular article 4">
+                        </figure>
+                    </a>
+                    <a href="#" class="next-image" id="recommend5">
+                        <figure class="recomended" id="top5">
+                            <img src="resources/pics/image5.png" alt="Most popular article 5">
+                        </figure>
+                    </a>
+                </aside>
+            </section>
+            <script src="js/pics.js"></script>
+        </main>
+        <main id="news-page" class="hidden">
+            <article  class="latest-news">
+            	<div class="news-caption">Latest News :</div>
+            	<main>
+            		<p>Yesterday a member of the Mandalore team was found dead in his home after consuming a deadly dose of Tom Clancy's Rainbow Six gameplay. It appears the victim had gotten incredibly obsessed with the new game that the publishers of the incredible series released not so long ago. Scientists warn that the game is quite dangerous and must not be allowed to the public user.</p>
+				</main>
+            </article>
+            <article class="not-so-latest-news">
+        		<div class="news-caption">Not So Latest News :</div>
+            	<main>
+            		<p>Today a software developer was found unconcious at his home after spending a whole night writting HTML & CSS which will suppousedly affect his sanity in a very bad way in the future. The person was thought to be in coma when suddenly his alarm started ringing and he jumped grabbing his laptop and running like a wild rabbit from a fox yelling something which sounded like "Fuck Fuck fuck fuck ... Im gonna be late for team-project defense... FUCK !!!"</p>
+				</main>
+            </article>
+        </main>
+        <main id="videos-page" class="hidden">
+            VIDEOS
+            <p>AZ DA NE SUM ZA 1 VECHER WE ?!?!!?!?/1111/?!?</p>
+        </main>
+        <main id="gifs-page" class="hidden">
+            <section id="gifs-main-content">
+                <article id="gif-article1" class="shown-gif">
+                    <div class="gif-caption">Going to project defense after all night building the project ...</div>
+                    <a class="next-gif" href="#" id="gif2">
+                        <p>Next Image</p>
+                        <img src="resources/img/next-button.png">
+                        <img src="resources/img/next-button.png">
+                    </a>
+                    <img src="resources/gifs/gif1.gif" alt="Article gif">
+                    <div class="votes">
+                        <div class="upvote"></div>
+                        <div class="downvote"></div>
+                    </div>
+                </article>
+                <article id="gif-article2" class="hidden-gif">
+                    <div class="gif-caption">When you fix a colleague's code...</div>
+                    <a class="next-gif" href="#" id="gif3">
+                        <p>Next Image</p>
+                        <img src="resources/img/next-button.png">
+                        <img src="resources/img/next-button.png">
+                    </a>
+                    <img src="resources/gifs/gif2.gif" alt="Article gif">
+                    <div class="votes">
+                        <div class="upvote"></div>
+                        <div class="downvote"></div>
+                    </div>
+                </article>
+                <article id="gif-article3" class="hidden-gif">
+                    <div class="gif-caption">git-blame</div>
+                    <a class="next-gif" href="#" id="gif4">
+                        <p>Next Image</p>
+                        <img src="resources/img/next-button.png">
+                        <img src="resources/img/next-button.png">
+                    </a>
+                    <img src="resources/gifs/gif3.gif" alt="Article gif">
+                    <div class="votes">
+                        <div class="upvote"></div>
+                        <div class="downvote"></div>
+                    </div>
+                </article>
+                <article id="gif-article4" class="hidden-gif">\
+                    <div class="gif-caption">When you fuck up the master branch...</div>
+                    <a class="next-gif" href="#" id="gif5">
+                        <p>Next Image</p>
+                        <img src="resources/img/next-button.png">
+                        <img src="resources/img/next-button.png">
+                    </a>
+                    <img src="resources/gifs/gif4.gif" alt="Article gif">
+                    <div class="votes">
+                        <div class="upvote"></div>
+                        <div class="downvote"></div>
+                    </div>
+                </article>
+                <article id="gif-article5" class="hidden-gif">
+                    <div class="gif-caption" id="gif1">When you see what your colleagues have been doing on the project...</div>
+                    <a class="next-gif" href="#" id="image1">
+                        <p>Next Image</p>
+                        <img src="resources/img/next-button.png">
+                        <img src="resources/img/next-button.png">
+                    </a>
+                    <img src="resources/gifs/gif5.gif" alt="Article gif">
+                    <div class="votes">
+                        <div class="upvote"></div>
+                        <div class="downvote"></div>
+                    </div>
+                </article>
+                <aside id="gifs-recommendations">
+                    <a href="#" class="next-gif" id="gif-recommend1">
+                        <figure class="recomended" id="gif-top1">
+                            <img src="resources/gifs/gif1.gif" alt="Most popular article 1">
+                        </figure>
+                    </a>
+                    <a href="#" class="next-gif" id="gif-recommend2">
+                        <figure class="recomended" id="gif-top2">
+                            <img src="resources/gifs/gif2.gif" alt="Most popular article 2">
+                        </figure>
+                    </a>
+                    <a href="#" class="next-gif" id="gif-recommend3">
+                        <figure class="recomended" id="gif-top3">
+                            <img src="resources/gifs/gif3.gif" alt="Most popular article 3">
+                        </figure>
+                    </a>
+                    <a href="#" class="next-gif" id="gif-recommend4">
+                        <figure class="recomended" id="gif-top4">
+                            <img src="resources/gifs/gif4.gif" alt="Most popular article 4">
+                        </figure>
+                    </a>
+                    <a href="#" class="next-gif" id="gif-recommend5">
+                        <figure class="recomended" id="gif-top5">
+                            <img src="resources/gifs/gif5.gif" alt="Most popular article 5">
+                        </figure>
+                    </a>
+                </aside>
+            </section>
+            <script src="js/gifs.js"></script>
+        </main>
+        <main id="game-page" class="hidden">
+            <div id="board">
+                <div id="winner"></div>
+                <div id="row1" class="row">
+                    <span class="cell" id="00"></span>
+                    <span class="cell" id="01"></span>
+                    <span class="cell" id="02"></span>
+                    <span class="cell" id="03"></span>
+                    <span class="cleaner"></span>
+                </div>
+                <div id="row2" class="row">
+                    <span class="cell" id="10"></span>
+                    <span class="cell" id="11"></span>
+                    <span class="cell" id="12"></span>
+                    <span class="cell" id="13"></span>
+                    <span class="cleaner"></span>
+                </div>
+                <div id="row3" class="row">
+                    <span class="cell" id="20"></span>
+                    <span class="cell" id="21"></span>
+                    <span class="cell" id="22"></span>
+                    <span class="cell" id="23"></span>
+                    <span class="cleaner"></span>
+                </div>
+                <div id="row4" class="row">
+                    <span class="cell" id="30"></span>
+                    <span class="cell" id="31"></span>
+                    <span class="cell" id="32"></span>
+                    <span class="cell" id="33"></span>
+                    <span class="cleaner"></span>
+                </div>
+                <div class="button" onclick="reset();">
+                    <button>New Game</button>
+                </div>
+            </div>
+            <script src="js/game.js"></script>
+        </main>
+
+        <footer class="footer-container">
+            <main>
+                <nav>
+                    <ul type="none">
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Some bullshit</a></li>
+                        <li><a href="">DaRighteous1</a></li>
+                        <li><a href="">Dafuq</a></li>
+                        <li><a href="">3fonPorn</a></li>
+                        <li><a href="">Insert Link Caption Here</a></li>
+                    </ul>
+                </nav>
+            </main>
+            <aside>
+                © 2016 DaDonkeys, Inc. All Rights Reserved.
+            </aside>
+        </footer>
+    </div>
+</body>
+</html>
