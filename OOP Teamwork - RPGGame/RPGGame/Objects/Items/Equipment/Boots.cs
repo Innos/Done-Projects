@@ -13,8 +13,8 @@ namespace TeamAndatHypori.Objects.Items.Equipment
         #region Constants
         private const Name DefaultName = Name.Armor;
         private const int DefaultAttackPointsBonus = 0;
-        private const int DefaultDefencePointsBonus = 1;
-        private const int DefaultSpeedPointsBonus = 1;
+        private const int DefaultDefencePointsBonus = 2;
+        private const int DefaultSpeedPointsBonus = 2;
         private const int DefaultHealthPointsBonus = 0;
         #endregion
 
