@@ -1,0 +1,18 @@
+<h4><strong>PlayLists:</strong></h4>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Title</th>
+        <th>Author</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#playlists}}
+    <tr data-id="{{id}}">
+        <td>{{title}}</td>
+        <td>{{author}}</td>
+    </tr>
+    {{/playlists}}
+    </tbody>
+</table>
+<button id="create">Create Playlist</button>

@@ -1,0 +1,28 @@
+<div>
+    {{#playlist}}
+    <h4><strong>Play List Name:</strong> {{title}}</h4>
+    <h4><strong>Author:</strong> {{author}}</h4>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>song title</th>
+            <th>author</th>
+            <th>actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#songs}}
+        <tr>
+            <td>{{title}}</td>
+            <td>{{author}}</td>
+            <td>
+                <span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+            </td>
+        </tr>
+        {{/songs}}
+        </tbody>
+    </table>
+    {{/playlist}}
+</div>

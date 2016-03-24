@@ -1,0 +1,15 @@
+#wrapper {
+    width: 800px;
+    height: 600px;
+    margin: auto;
+}
+
+.song-image {
+    width: 200px;
+    height: 200px;
+}
+
+#login, #register, #loginContainer, #registerContainer {
+    width: 50%;
+    margin: 100px auto;
+}

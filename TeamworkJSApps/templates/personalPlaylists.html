@@ -1,0 +1,11 @@
+<h1>My Playlists:</h1>
+<ul>
+    {{#playlists}}
+    <li data-id="{{id}}">
+        <p><strong>Title:</strong> {{title}}</p>
+        <p><strong>Author:</strong> {{author}}</p>
+        <button class="delete">Delete</button>
+    </li>
+    {{/playlists}}
+</ul>
+<button id="create">Create Playlist</button>
