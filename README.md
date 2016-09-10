@@ -1,2 +1,2 @@
-# Done-Projects
-Portfolio of done projects
+# Teamwork-Projects
+Teamwork projects I have worked upon in Softuni
