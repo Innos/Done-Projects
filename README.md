@@ -1,2 +1,2 @@
 # Small Projects
-Teamwork projects or Workshops I have done in Softuni
+Teamwork projects, Workshops or small side projects I have done.
